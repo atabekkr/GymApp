@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_vertical_card"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:backgroundTint="@color/color_til"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            app:cardElevation="@dimen/dimen_card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_clothes1" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="Dri-fit, Coolmax, or Supplex"
+                    android:textSize="@dimen/dimen_description_category"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_vertical_card"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:backgroundTint="@color/color_til"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            app:cardElevation="@dimen/dimen_card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_clothes2" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="Only when engaging in sports or physical activity"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_description_category"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_vertical_card"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:backgroundTint="@color/color_til"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            app:cardElevation="@dimen/dimen_card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_clothes3" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="Only when engaging in sports or physical activity"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_description_category"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_vertical_card"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:backgroundTint="@color/color_til"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            app:cardElevation="@dimen/dimen_card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_clothes4" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="Dri-fit, Coolmax, or Supplex"
+                    android:textSize="@dimen/dimen_description_category"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</LinearLayout>

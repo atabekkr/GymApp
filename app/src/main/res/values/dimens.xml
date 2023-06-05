@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_standart">16dp</dimen>
+    <dimen name="dimen_categories">20sp</dimen>
+    <dimen name="dimen_horizantal_card">14dp</dimen>
+    <dimen name="dimen_vertical_card">8dp</dimen>
+    <dimen name="dimen_card_elevation">4dp</dimen>
+    <dimen name="dimen_horizantal_image_card">16dp</dimen>
+    <dimen name="dimen_vertical_image_card">32dp</dimen>
+    <dimen name="dimen_margin_layout">6dp</dimen>
+    <dimen name="dimen_height_card">160dp</dimen>
+    <dimen name="dimen_height_text_card">48dp</dimen>
+    <dimen name="dimen_description_category">10sp</dimen>
+</resources>

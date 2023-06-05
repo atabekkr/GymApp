@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.auth.AuthFragment">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/gym_app_logog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="24dp"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym"
+        app:layout_constraintStart_toEndOf="@id/iv_logo"
+        app:layout_constraintTop_toTopOf="@id/iv_logo"
+        app:layout_constraintBottom_toBottomOf="@id/iv_logo"
+        android:textColor="@color/color_main"
+        android:textSize="24sp"
+        android:fontFamily="@font/lato_regular"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Войдите в свой аккаунт"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"
+        app:layout_constraintStart_toStartOf="@id/iv_logo"
+        android:textColor="@color/color_main"
+        android:layout_marginTop="@dimen/margin_standart"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" "
+        app:layout_constraintTop_toBottomOf="@id/tv_login"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        app:endIconMode="clear_text"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_login"
+            android:background="@drawable/background_til"
+            android:hint="Логин"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" "
+        app:layout_constraintTop_toBottomOf="@id/til_login"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        app:endIconMode="password_toggle"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_password"
+            android:background="@drawable/background_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/til_login"
+        app:layout_constraintEnd_toEndOf="@id/til_login"
+        app:layout_constraintTop_toBottomOf="@id/til_password"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ripple_effect_login_button"
+        android:backgroundTint="@color/color_main"
+        android:text="Войти в магазин"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:fontFamily="@font/lato_regular" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

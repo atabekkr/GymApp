@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.product.overview.ProductOverviewFragment">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/color_category_toolbar"
+        >
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:src="@drawable/pic_sport_wear"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginTop="24dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_product"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Есть в наличии"
+        android:layout_margin="24dp"
+        android:textColor="#4CAF50"
+        android:fontFamily="@font/lato_regular"
+        />
+
+    <TextView
+        android:id="@+id/tv_piece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4шт"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_stock"
+        app:layout_constraintBottom_toBottomOf="@id/tv_stock"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/lato_regular"
+        />
+
+    <TextView
+        android:id="@+id/tv_name_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_stock"
+        app:layout_constraintStart_toStartOf="@id/tv_stock"
+        android:text="Сумка Starlight"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_product"
+        app:layout_constraintStart_toStartOf="@id/tv_name_product"
+        android:text="Бренд"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/lato_regular"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/tv_piece"
+        app:layout_constraintTop_toTopOf="@id/tv_brand"
+        app:layout_constraintBottom_toBottomOf="@id/tv_brand"
+        android:text="Apple"
+        android:fontFamily="@font/lato_regular"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/expandable_characteristic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_brand"
+        app:layout_constraintStart_toStartOf="@id/tv_stock"
+        app:layout_constraintEnd_toEndOf="@id/tv_piece"
+        android:layout_marginTop="24dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_characteristic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Характеристики"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_characteristic"
+            app:layout_constraintBottom_toBottomOf="@id/tv_characteristic"
+            />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_characteristic"
+            android:text="Новый волшебный способ взаимодействия с iPhone.
+Новаторские функции безопасности, призванные спасать жизни.
+Инновационная 48-мегапиксельная камера для потрясающей детализации.
+Все они оснащены новейшим чипом для смартфонов.
+С керамическим экраном, более прочным, чем стекло любого смартфона. Водонепроницаемость. Нержавеющая сталь хирургического класса.
+Представляем Dynamic Island, по-настоящему инновационную разработку Apple"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

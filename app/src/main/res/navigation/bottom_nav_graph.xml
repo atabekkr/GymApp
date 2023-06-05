@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.karsoft.gymapp.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_brandFragment"
+            app:destination="@id/brandFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_stokFragment"
+            app:destination="@id/stokFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.karsoft.gymapp.ui.category.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_addCategoryDialog"
+            app:destination="@id/addCategoryDialog" />
+        <action
+            android:id="@+id/action_categoryFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_clothesFragment2"
+            app:destination="@id/clothesFragment2" />
+        <action
+            android:id="@+id/action_categoryFragment_to_tovarFragment"
+            app:destination="@id/tovarFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_trenFragment"
+            app:destination="@id/trenFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_shakerFragment"
+            app:destination="@id/shakerFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_backPackFragment"
+            app:destination="@id/backPackFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addCategoryDialog"
+        android:name="com.karsoft.gymapp.ui.category.dialogcategory.AddCategoryDialog"
+        android:label="dialog_add_category"
+        tools:layout="@layout/dialog_add_category" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.karsoft.gymapp.ui.product.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_to_productOverviewFragment"
+            app:destination="@id/productOverviewFragment" />
+        <action
+            android:id="@+id/action_productFragment_to_addCategoryDialog"
+            app:destination="@id/addCategoryDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/productOverviewFragment"
+        android:name="com.karsoft.gymapp.ui.product.overview.ProductOverviewFragment"
+        android:label="fragment_product_overview"
+        tools:layout="@layout/fragment_product_overview" />
+    <fragment
+        android:id="@+id/brandFragment"
+        android:name="com.karsoft.gymapp.ui.brand.BrandFragment"
+        android:label="fragment_brand"
+        tools:layout="@layout/fragment_brand" >
+        <action
+            android:id="@+id/action_brandFragment_to_addCategoryDialog"
+            app:destination="@id/addCategoryDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.karsoft.gymapp.ui.transaction.TransactionFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_transaction" />
+    <fragment
+        android:id="@+id/clothesFragment2"
+        android:name="com.karsoft.gymapp.ui.category.clothes.ClothesFragment"
+        android:label="ClothesFragment" />
+    <fragment
+        android:id="@+id/stokFragment"
+        android:name="com.karsoft.gymapp.ui.stok.StokFragment"
+        android:label="StokFragment" >
+        <action
+            android:id="@+id/action_stokFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tovarFragment"
+        android:name="com.karsoft.gymapp.ui.category.sporttovar.TovarFragment"
+        android:label="TovarFragment" />
+    <fragment
+        android:id="@+id/trenFragment"
+        android:name="com.karsoft.gymapp.ui.category.tren.TrenFragment"
+        android:label="TrenFragment" />
+    <fragment
+        android:id="@+id/shakerFragment"
+        android:name="com.karsoft.gymapp.ui.category.shaker.ShakerFragment"
+        android:label="ShakerFragment" />
+    <fragment
+        android:id="@+id/backPackFragment"
+        android:name="com.karsoft.gymapp.ui.category.backpack.BackPackFragment"
+        android:label="BackPackFragment" />
+</navigation>
